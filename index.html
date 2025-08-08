@@ -3,138 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hello Naz - A modern single page web application">
-    <meta name="author" content="Hello Naz App">
     <title>Hello Naz</title>
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="script.js" as="script">
-    
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
 </head>
 <body>
-    <!-- Loading spinner -->
-    <div id="loading-spinner" class="loading-spinner" aria-hidden="true">
-        <div class="spinner"></div>
+    <nav class="nav-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+    <div class="content">
+        <h1>Hello Naz</h1>
     </div>
-
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Main container -->
-    <div class="container">
-        <!-- Background decorative elements -->
-        <div class="bg-decoration">
-            <div class="floating-shape shape-1"></div>
-            <div class="floating-shape shape-2"></div>
-            <div class="floating-shape shape-3"></div>
-        </div>
-
-        <!-- Header section -->
-        <header class="header" role="banner">
-            <nav class="nav" role="navigation" aria-label="Main navigation">
-                <div class="nav-brand">
-                    <span class="brand-icon" aria-hidden="true">👋</span>
-                    <span class="brand-text">Hello Naz</span>
-                </div>
-            </nav>
-        </header>
-
-        <!-- Main content -->
-        <main id="main-content" class="main-content" role="main">
-            <section class="hero-section">
-                <div class="hero-content">
-                    <!-- Main heading with animation -->
-                    <h1 class="hero-title" id="hero-title">
-                        <span class="title-line">Hello</span>
-                        <span class="title-line title-highlight">Naz</span>
-                    </h1>
-                    
-                    <!-- Subtitle -->
-                    <p class="hero-subtitle" id="hero-subtitle">
-                        Welcome to a modern, clean, and responsive web experience
-                    </p>
-                    
-                    <!-- Action buttons -->
-                    <div class="hero-actions">
-                        <button class="btn btn-primary" id="primary-btn" type="button">
-                            <span class="btn-text">Get Started</span>
-                            <span class="btn-icon" aria-hidden="true">→</span>
-                        </button>
-                        <button class="btn btn-secondary" id="secondary-btn" type="button">
-                            <span class="btn-text">Learn More</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Interactive element -->
-                <div class="interactive-element" id="interactive-element">
-                    <div class="element-content">
-                        <div class="pulse-ring"></div>
-                        <div class="pulse-ring pulse-ring-delay"></div>
-                        <div class="center-dot"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Features section -->
-            <section class="features-section" id="features">
-                <div class="features-grid">
-                    <div class="feature-card" tabindex="0">
-                        <div class="feature-icon" aria-hidden="true">⚡</div>
-                        <h3 class="feature-title">Fast</h3>
-                        <p class="feature-description">Lightning fast loading and smooth interactions</p>
-                    </div>
-                    <div class="feature-card" tabindex="0">
-                        <div class="feature-icon" aria-hidden="true">📱</div>
-                        <h3 class="feature-title">Responsive</h3>
-                        <p class="feature-description">Perfect experience on all devices and screen sizes</p>
-                    </div>
-                    <div class="feature-card" tabindex="0">
-                        <div class="feature-icon" aria-hidden="true">✨</div>
-                        <h3 class="feature-title">Modern</h3>
-                        <p class="feature-description">Built with the latest web technologies and best practices</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer" role="contentinfo">
-            <div class="footer-content">
-                <p class="footer-text">
-                    Made with <span class="heart" aria-label="love">❤️</span> for Naz
-                </p>
-                <div class="footer-links">
-                    <button class="footer-link" type="button" id="theme-toggle" aria-label="Toggle dark mode">
-                        <span class="theme-icon">🌙</span>
-                    </button>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Toast notification -->
-    <div id="toast" class="toast" role="alert" aria-live="polite" aria-atomic="true">
-        <div class="toast-content">
-            <span class="toast-message"></span>
-            <button class="toast-close" type="button" aria-label="Close notification">×</button>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="script.js" defer></script>
-    
-    <!-- Error handling for missing resources -->
-    <script>
-        window.addEventListener('error', function(e) {
-            console.warn('Resource loading error:', e.filename || e.target?.src || e.target?.href);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
